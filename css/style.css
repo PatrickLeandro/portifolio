@@ -888,6 +888,10 @@ body {
   z-index: 999;
 }
 
+.list-item a:hover {
+  opacity: 0.05;
+}
+
 .list-item a:hover + .img-project {
   -webkit-transform: translate(-50%, -50%) translate3d(0, 0, 0);
           transform: translate(-50%, -50%) translate3d(0, 0, 0);
