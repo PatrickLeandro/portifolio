@@ -198,7 +198,9 @@ body {
 }
 
 .container-item:nth-child(2) img {
-  max-width: 300px;
+  width: 300px;
+  opacity: 0.8;
+  border-radius: 300px;
 }
 
 .bg-hero {
