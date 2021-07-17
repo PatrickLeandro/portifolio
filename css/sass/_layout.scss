@@ -101,3 +101,48 @@
     }
 }
 }
+
+// SELECTED WORKS
+
+
+.list-item{
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: relative;
+
+    a{
+        &:hover{
+            & + .img-project{
+                transform: translate(-50%, -50%) translate3d(0,0,0);
+            }
+        }
+    }
+}
+
+.img-project{
+    max-width: 400px;
+    border-radius: 4px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) translate3d(1500px, 0,0) skew(60deg);
+
+    transition: .6s linear;
+
+    
+
+}
+
+.bb-gray{
+    border-bottom: 1px solid $black-light;
+    width: 100%;
+}
