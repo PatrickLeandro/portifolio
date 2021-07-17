@@ -103,15 +103,17 @@ h6{
 
         z-index: -1;
 
-        transform: translate(-13%, -25%) rotate(45deg);
+        transform: translate(-13%, -23%) rotate(45deg);
 
 
         border-radius: 4px;
         transition:  .5s ease;
+
+        opacity: 0.5;
     }
     &:hover {
         &::after{
-        transform: translate(-13%, -25%) rotate(30deg);
+        transform: translate(-13%, -23%) rotate(300deg);
         }
     }
 }
