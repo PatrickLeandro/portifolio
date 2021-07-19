@@ -22,6 +22,7 @@ a {
 .link {
   padding: 8px 24px;
   font-size: 24px;
+  display: inline-block;
   -webkit-transition: .5s linear;
   transition: .5s linear;
   position: relative;
@@ -912,5 +913,15 @@ body {
 .bb-gray {
   border-bottom: 1px solid #15171A;
   width: 100%;
+}
+
+.get {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+}
+
+.text-center {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
