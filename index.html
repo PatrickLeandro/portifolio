@@ -16,14 +16,14 @@
     <header class="menu ">
         <div class="menu-left "> 
             <a href="" class="link menu-1">Home</a>
-            <a href="" class="link menu-2">About</a>
+            <a href="#section-02" class="link menu-2">About</a>
         </div>
         <div class="menu-logo "> 
             <p>Patrick</p>
         </div>
         <div class="menu-right "> 
             <a href="#section-01" class="link menu-3">Works</a>
-            <a href="#section-02" class="link menu-4">Get in touch</a></div>
+            <a href="#section-03" class="link menu-4">Get in touch</a></div>
     </header>
 
    <!-- BACKGROUND HERO -->
@@ -121,7 +121,7 @@
             
 
             <div class="flex-end pr-9">
-                <a href="" class="square">Works</a>
+                <a href="#section-01" class="square">Works</a>
             </div>
             
         </div>
@@ -168,11 +168,25 @@
         
     </section>
 
-
     <section class="get mt-7" id="section-02" >
+        <div>
+            <h2>About</h2>
+        </div>
+        
+        <div class="get mt-5">
+            <h4>Nascido na cidade de Jacarei-SP no dia 18/01/1996, me chamo Patrick Batista Leandro, atualmente tenho 25 anos, residente na cidade de São José dos Campos sou aluno do curso análise e desenvolvimento de sistemas na faculdade Unopar. 
+                <br><br>Amante da arte de programar estudo as técnologias Front-End.
+            </h4>
+        </div>
+    </section>
+
+
+    <section class="get mt-7" id="section-03" >
         <div>
             <h2>Get in touch</h2>
         </div>
+
+        
 
         
         <div class="redes mt-7">
@@ -191,108 +205,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js" integrity="sha512-jNJOCd1PIjJoUa1XTDKaPdBLNUe4OJTrltKG+70O5ghYZ943nTRGIzjObwC2JtSm1fG7T06GbUApR2eirIU/jA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script>
-
-        
-    let i = 0;
-    let message = 'Patrick Leandro ';
-    
-    typing();
-
-    function typing(){
-
-        
-        if(i < message.length){
-            document.getElementById('text').innerHTML += message.charAt(i);
-            i++;
-            setTimeout(typing, 200);
-
-        } 
-        // if (i >= 16) {
-        //     document.getElementById('text').innerHTML= '  ';
-        //     i = 0;
-
-        // }  
-        
-        
-    }
-    
-
-
-        document.addEventListener('DOMContentLoaded', () => {
-            var timeL = gsap.timeline()
-
-            timeL
-            .from(".menu-1", {
-                opacity: 0,
-                duration: 1,
-                x: 50,
-                y: -200,
-                delay: 0.3
-            })
-            .from(".menu-2", {
-                opacity: 0,
-                duration: 1,
-                x: 50,
-                y: -200,
-            }, "-=0.8")
-            .from(".menu-3", {
-                opacity: 0,
-                duration: 1,
-                x: 50,
-                y: 200,
-            }, "-=0.8")
-            .from(".menu-4", {
-                opacity: 0,
-                duration: 1,
-                x: 50,
-                y: 200,
-            }, "-=0.8")
-
-            .from(".container-item div", {
-                opacity: 0,
-                duration: 1,
-                stagger: {each: 0.4},
-                x: -500,
-            }, "-=0.8")
-
-            .from(".container-item img", {
-                opacity: 0,
-                duration: 1,
-                y: 140,
-            }, "-=0.8")
-
-            gsap.registerPlugin(ScrollTrigger);
-
-gsap.from("#section-01 div",{
-    duration: 1,
-    x: -300,
-    opacity: 0,
-    stagger: {each: 0.2},
-    ease: "power3.out",
-    scrollTrigger: {
-        trigger: "#section-01",
-
-    }
-});
-
-gsap.from("#section-02 div",{
-    duration: 3,
-    delay: 0.5,
-    x: -300,
-    opacity: 0,
-    stagger: {each: 0.5},
-    ease: "power3.out",
-    scrollTrigger: {
-        trigger: "#section-02",
-
-    }
-});
-})
-
-        
-
-    </script>
+    <script src="js/index.js"></script>
 
 
 </body>
