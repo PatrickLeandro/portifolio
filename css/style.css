@@ -854,9 +854,6 @@ body {
 }
 
 @media screen and (max-width: 960px) {
-  .menu {
-    display: none;
-  }
   .svg-hero {
     -webkit-transform: scale(2) rotate(25deg);
             transform: scale(2) rotate(25deg);
@@ -923,5 +920,27 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.redes {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.redes a {
+  margin: 10px;
+}
+
+.icons {
+  width: 50px;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */

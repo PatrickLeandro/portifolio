@@ -87,9 +87,9 @@
 
 
 @media screen and (max-width: 960px){
-    .menu{
-        display: none;
-    }
+    // .menu{
+    //     display: none;
+    // }
 
     .svg-hero{
         transform: scale(2) rotate(25deg)
@@ -158,4 +158,19 @@
 
 .text-center{
     text-align: center;
+}
+
+.redes{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.redes a{
+    margin: 10px;
+}
+
+.icons{
+    width: 50px;
+    margin: auto;
 }
