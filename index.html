@@ -109,8 +109,8 @@
     <section class="container hero">
         <div class="container-item ">
 
+            <h1 id="text"></h1>
             <div>
-                <h1>Patrick Leandro</h1>
             </div>
             <div>
                 <h2 class="mask text-right mt-7">Creative Developer</h2>
@@ -185,6 +185,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js" integrity="sha512-jNJOCd1PIjJoUa1XTDKaPdBLNUe4OJTrltKG+70O5ghYZ943nTRGIzjObwC2JtSm1fG7T06GbUApR2eirIU/jA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
+
+        
+    let i = 0;
+    let message = 'Patrick Leandro ';
+    
+    typing();
+
+    function typing(){
+
+        
+        if(i < message.length){
+            document.getElementById('text').innerHTML += message.charAt(i);
+            i++;
+            setTimeout(typing, 200);
+
+        } 
+        // if (i >= 16) {
+        //     document.getElementById('text').innerHTML= '  ';
+        //     i = 0;
+
+        // }  
+        
+        
+    }
+    
+
 
         document.addEventListener('DOMContentLoaded', () => {
             var timeL = gsap.timeline()
