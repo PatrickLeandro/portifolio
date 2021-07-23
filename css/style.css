@@ -854,6 +854,9 @@ body {
 }
 
 @media screen and (max-width: 960px) {
+  .menu {
+    display: none;
+  }
   .svg-hero {
     -webkit-transform: scale(2) rotate(25deg);
             transform: scale(2) rotate(25deg);
