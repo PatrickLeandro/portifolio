@@ -1,6 +1,6 @@
    
     let i = 0;
-    let message = 'Patrick Leandro ';
+    let message = 'atrick Leandro ';
     
     typing();
 
